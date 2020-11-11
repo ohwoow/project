@@ -20,56 +20,58 @@
           <img src="img/logo.png" alt="Дикий офис">
         </a>
 
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link _active">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">О нас</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Наш продукт</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Записаться</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Посмотреть</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Партнерам</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакты</a>
-            </li>
-          </ul>
-
-          <div class="nav__social social">
-            <ul class="social__list">
-              <li class="social__item">
-                <a href="#" aria-label="twitter">
-                  <img src="img/twitter.svg" alt="twitter">
-                </a>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link _active">Главная</a>
               </li>
-              <li class="social__item">
-                <a href="#" aria-label="whatsapp">
-                  <img src="img/whatsapp.svg" alt="whatsapp">
-                </a>
+              <li class="nav__item">
+                <a href="#" class="nav__link">О нас</a>
               </li>
-              <li class="social__item">
-                <a href="#" aria-label="facebook">
-                  <img src="img/facebook.svg" alt="facebook">
-                </a>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Наш продукт</a>
               </li>
-              <li class="social__item">
-                <a href="#" aria-label="instagram">
-                  <img src="img/instagram.svg" alt="instagram">
-                </a>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Записаться</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Посмотреть</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Партнерам</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
               </li>
             </ul>
-          </div>
-        </nav>
+  
+            <div class="nav__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#" aria-label="twitter">
+                    <img src="img/twitter.svg" alt="twitter">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" aria-label="whatsapp">
+                    <img src="img/whatsapp.svg" alt="whatsapp">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" aria-label="facebook">
+                    <img src="img/facebook.svg" alt="facebook">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" aria-label="instagram">
+                    <img src="img/instagram.svg" alt="instagram">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
         <button type="button" class="header__btn">
           <span></span>
           <span></span>
@@ -116,6 +118,14 @@
             </div>
 
             <button class="slide-right">Подробнее</button>
+
+
+            <div id="video-bg">
+              <video width="100%" height="auto" autoplay mute loop>
+                <source src="video/video-bg.mp4" type="video/webm"></source>
+                <source src="video/video-bg.webm" type="video/webm"></source>
+              </video>
+            </div>
           </section>
         </div>
         <div class="swiper-slide">
@@ -229,7 +239,8 @@
                   </h3>
                   <div class="info__item-text">
                     <p>идеально для команд, которые работают дистанционно/удаленно</p>
-                    <p>подключение веб-камер позволяет одновременно следить за реакциями всех участников - не скрыться никому</p>
+                    <p>подключение веб-камер позволяет одновременно следить за реакциями всех участников - не скрыться
+                      никому</p>
                     <p>локация каждого сотрудника ограничивается лишь наличием стабильного интернет соединения</p>
                   </div>
                 </div>
@@ -333,6 +344,7 @@
           </section>
         </div>
       </div>
+      <div class="overlay"></div>
     </div>
 
     <script src="js/swiper.min.js"></script>

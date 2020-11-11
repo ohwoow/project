@@ -1,0 +1,54 @@
+@font-face {
+     font-family: 'Mont';
+     /* Имя шрифта */
+     src: url('../fonts/Mont.ttf') format('ttf'),
+          url('../fonts/Mont.woff') format('woff'),
+          url('../fonts/Mont.woff2') format('woff2');
+
+     font-display: swap;
+     font-weight: normal;
+}
+
+@font-face {
+     font-family: 'Mont';
+     /* Имя шрифта */
+     src: url('../fonts/Mont-SemiBold.ttf') format('ttf'),
+          url('../fonts/Mont-SemiBold.woff') format('woff'),
+          url('../fonts/Mont-SemiBold.woff2') format('woff2');
+
+     font-display: swap;
+     font-weight: 600;
+}
+
+@font-face {
+     font-family: 'Mont';
+     /* Имя шрифта */
+     src: url('../fonts/Mont-Bold.ttf') format('ttf'),
+          url('../fonts/Mont-Bold.woff') format('woff'),
+          url('../fonts/Mont-Bold.woff2') format('woff2');
+
+     font-display: swap;
+     font-weight: 700;
+}
+
+@font-face {
+     font-family: 'Gilroy';
+     /* Имя шрифта */
+     src: url('../fonts/Gilroy-Thin.ttf') format('ttf'),
+          url('../fonts/Gilroy-Thin.woff') format('woff'),
+          url('../fonts/Gilroy-Thin.woff2') format('woff2');
+
+     font-display: swap;
+     font-weight: 300;
+}
+
+@font-face {
+     font-family: 'Gilroy';
+     /* Имя шрифта */
+     src: url('../fonts/Gilroy-Extrabold.ttf') format('ttf'),
+          url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+          url('../fonts/Gilroy-Extrabold.woff2') format('woff2');
+
+     font-display: swap;
+     font-weight: 900;
+}

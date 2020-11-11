@@ -2,10 +2,12 @@
 
 const menuBtn = document.querySelector('.header__btn')
 const menu = document.querySelector('.nav')
+const overlay = document.querySelector('.overlay')
 
 menuBtn.addEventListener('click', function() {
   this.classList.toggle('_active')
   menu.classList.toggle('_active')
+  overlay.classList.toggle('show')
 })
 
 
