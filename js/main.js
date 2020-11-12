@@ -15,6 +15,7 @@ const heroSlider = new Swiper('.hero-slider', {
   slidesPerView: 1,
   speed: 700,
   allowTouchMove: true,
+  mousewheel: true,
 
   pagination: {
     el: '.hero-pag',
@@ -27,7 +28,6 @@ const heroSlider = new Swiper('.hero-slider', {
   breakpoints: {
     1200: {
       allowTouchMove: false,
-      mousewheel: true,
     }
   }
 });
@@ -35,7 +35,7 @@ const heroSlider = new Swiper('.hero-slider', {
 const aboutSlider = new Swiper('.about-slider', {
   slidesPerView: 1,
   speed: 800,
-  allowTouchMove: false,
+  allowTouchMove: true,
   mousewheel: true,
 
   pagination: {
@@ -45,13 +45,17 @@ const aboutSlider = new Swiper('.about-slider', {
     nextEl: '.slide-right',
     prevEl: '.slide-left',
   },
-
+  breakpoints: {
+    1200: {
+      allowTouchMove: false,
+    }
+  }
 });
 
 const infoSlider = new Swiper('.info-slider', {
   slidesPerView: 1,
   speed: 800,
-  allowTouchMove: false,
+  allowTouchMove: true,
   mousewheel: true,
 
   pagination: {
@@ -61,7 +65,11 @@ const infoSlider = new Swiper('.info-slider', {
     nextEl: '.slide-right',
     prevEl: '.slide-left',
   },
-
+  breakpoints: {
+    1200: {
+      allowTouchMove: false,
+    }
+  }
 });
 
 // Добавляем пагинацию и меняем класс на последнем слайде
@@ -141,4 +149,17 @@ const teamTop = new Swiper('.team__top', {
   thumbs: {
     swiper: teamThumbs
   }
+});
+
+
+// Модалка
+
+const modal = new Modal({
+	isOpen: (modal) => {
+		console.log(modal);
+		console.log('opened');
+	},
+	isClose: () => {
+		console.log('closed');
+	},
 });
