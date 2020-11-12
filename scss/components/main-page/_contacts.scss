@@ -1,0 +1,31 @@
+.contacts {
+  background: url('../img/decoration-1.png') center no-repeat,
+              url('../img/bg-gray.jpg') center/cover no-repeat;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 59px;
+  }
+
+  &__info {
+    margin-bottom: 60px;
+    max-width: 450px;
+
+    span {
+      display: block;
+      font-family: 'Gilroy', sans-serif;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 36px;
+
+    letter-spacing: 0.1em;
+  }
+}

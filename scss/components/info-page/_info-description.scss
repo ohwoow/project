@@ -1,0 +1,41 @@
+.info-description {
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    max-width: 460px;
+
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 30px;
+
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+    background: url('../img/company-img.jpg') right/cover no-repeat;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+}
