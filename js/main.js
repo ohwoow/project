@@ -99,3 +99,40 @@ infoSlider.on('slideChange', function () {
   }
 })
 
+// галлерея
+
+const galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 12,
+});
+const galleryTop = new Swiper('.gallery-top', {
+  effect: 'fade',
+  navigation: {
+    nextEl: '.gallery-button-next',
+    prevEl: '.gallery-button-prev',
+  },
+  autoplay: {
+    delay: 3500,
+  },
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
+
+// Команда
+
+const teamThumbs = new Swiper('.team__bottom', {
+  spaceBetween: 10,
+  slidesPerView: 6,
+});
+const teamTop = new Swiper('.team__top', {
+  spaceBetween: 50,
+  navigation: {
+    nextEl: '.team__top-btn_next',
+    prevEl: '.team__top-btn_prev',
+  },
+
+  thumbs: {
+    swiper: teamThumbs
+  }
+});
