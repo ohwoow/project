@@ -14,8 +14,7 @@ menuBtn.addEventListener('click', function() {
 const heroSlider = new Swiper('.hero-slider', {
   slidesPerView: 1,
   speed: 700,
-  allowTouchMove: false,
-  mousewheel: true,
+  allowTouchMove: true,
 
   pagination: {
     el: '.hero-pag',
@@ -24,6 +23,13 @@ const heroSlider = new Swiper('.hero-slider', {
     nextEl: '.slide-right',
     prevEl: '.slide-left',
   },
+
+  breakpoints: {
+    1200: {
+      allowTouchMove: false,
+      mousewheel: true,
+    }
+  }
 });
 
 const aboutSlider = new Swiper('.about-slider', {
