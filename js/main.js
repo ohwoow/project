@@ -117,10 +117,22 @@ infoSlider.on('slideChange', function () {
 
 const galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
-  slidesPerView: 12,
+  slidesPerView: 2,
   freeMode: true,
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 12,
+    },
+    850: {
+      slidesPerView: 8,
+    },
+    550: {
+      slidesPerView: 4,
+    },
+  }
 });
 const galleryTop = new Swiper('.gallery-top', {
   effect: 'fade',
