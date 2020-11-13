@@ -86,6 +86,7 @@ const featuresAnimatedUp = document.querySelectorAll('.animated-up')
 const infoAnimatedDown = document.querySelectorAll('.animated-down_info')
 const contactsAnimatedUp = document.querySelectorAll('.animated-up_contacts')
 const benefitsAnimatedDown = document.querySelectorAll('.animated-down_benefits')
+const teamAnimatedUp = document.querySelectorAll('.animated-up_team')
 const statisticsAnimatedUp = document.querySelectorAll('.animated-down_statistics')
 const instructionAnimatedUp  = document.querySelectorAll('.animated-up_instruction')
 let animTime = 0.2
