@@ -188,3 +188,17 @@ const modal = new Modal({
 		console.log('closed');
 	},
 });
+
+// Добавление активного класса ссылке в меню
+
+const navLink = document.querySelectorAll('.nav__link')
+const hash = window.location.pathname
+
+navLink.forEach(link => {
+
+  const href = '/' + link.getAttribute('href')
+  
+  if (hash === href) {
+    link.classList.add('_active')
+  }
+})
