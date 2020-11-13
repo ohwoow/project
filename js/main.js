@@ -80,6 +80,21 @@ const heroPag = document.querySelector('.hero-pag')
 const aboutPag = document.querySelector('.about-pag')
 const infoPag = document.querySelector('.info-pag')
 
+// Анимация
+
+const featuresAnimatedUp = document.querySelectorAll('.animated-up')
+const infoAnimatedDown = document.querySelectorAll('.animated-down_info')
+const contactsAnimatedUp = document.querySelectorAll('.animated-up_contacts')
+const benefitsAnimatedDown = document.querySelectorAll('.animated-down_benefits')
+const statisticsAnimatedUp = document.querySelectorAll('.animated-down_statistics')
+const instructionAnimatedUp  = document.querySelectorAll('.animated-up_instruction')
+let animTime = 0.2
+
+function anim(el, animClass) {
+  el.classList.add('animate__animated', animClass)
+  el.style.animationDelay = animTime + 's'
+}
+
 heroSlider.on('slideChange', function () {
 
   if (heroSlider.activeIndex >= 1) {
@@ -93,7 +108,24 @@ heroSlider.on('slideChange', function () {
   } else {
     heroPag.style.display = 'none'
   }
+
+  if (heroSlider.activeIndex === 1) {
+    featuresAnimatedUp.forEach(el => {
+      anim(el, 'animate__fadeInUp')
+    })
+  } else if (heroSlider.activeIndex === 2) {
+    infoAnimatedDown.forEach(el => {
+      anim(el, 'animate__fadeInDown')
+    })
+  } else if (heroSlider.activeIndex === 3) {
+    contactsAnimatedUp.forEach(el => {
+      anim(el, 'animate__fadeInUp')
+    })
+  }
+
 });
+
+
 
 aboutSlider.on('slideChange', function () {
   if (aboutSlider.activeIndex === aboutSliders.length - 1) {
@@ -101,6 +133,20 @@ aboutSlider.on('slideChange', function () {
     aboutPag.classList.add('right')
   } else {
     aboutPag.classList.remove('right')
+  }
+
+  if (aboutSlider.activeIndex === 1) {
+    benefitsAnimatedDown.forEach(el => {
+      anim(el, 'animate__fadeInUp')
+    })
+  } else if (aboutSlider.activeIndex === 2) {
+    teamAnimatedUp.forEach(el => {
+      anim(el, 'animate__fadeInUp')
+    })
+  } else if (aboutSlider.activeIndex === 3) {
+    feedbackAnimatedDown.forEach(el => {
+      anim(el, 'animate__fadeInDown')
+    })
   }
 })
 
@@ -110,6 +156,16 @@ infoSlider.on('slideChange', function () {
     infoPag.classList.add('right')
   } else {
     infoPag.classList.remove('right')
+  }
+
+  if (infoSlider.activeIndex === 1) {
+    statisticsAnimatedUp.forEach(el => {
+      anim(el, 'animate__fadeInUp')
+    })
+  } else if (infoSlider.activeIndex === 2) {
+    instructionAnimatedUp.forEach(el => {
+      anim(el, 'animate__fadeInUp')
+    })
   }
 })
 
@@ -175,6 +231,8 @@ const teamTop = new Swiper('.team__top', {
   }
   
 });
+
+
 
 
 // Модалка
