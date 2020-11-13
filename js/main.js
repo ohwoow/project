@@ -74,7 +74,7 @@ const infoSlider = new Swiper('.info-slider', {
 
 // Добавляем пагинацию и меняем класс на последнем слайде
 const heroSliders = document.querySelectorAll('.hero-slider .swiper-slide')
-const aboutSliders = document.querySelectorAll('.about-slider .swiper-slide')
+const aboutSliders = document.querySelectorAll('.about-slider  .about-slide')
 const infoSliders = document.querySelectorAll('.info-slider .swiper-slide')
 const heroPag = document.querySelector('.hero-pag')
 const aboutPag = document.querySelector('.about-pag')
@@ -118,6 +118,9 @@ infoSlider.on('slideChange', function () {
 const galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 10,
   slidesPerView: 12,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
 });
 const galleryTop = new Swiper('.gallery-top', {
   effect: 'fade',
@@ -133,11 +136,20 @@ const galleryTop = new Swiper('.gallery-top', {
   }
 });
 
-// Команда
+// Команда слайдер
 
 const teamThumbs = new Swiper('.team__bottom', {
   spaceBetween: 10,
-  slidesPerView: 6,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+
+  breakpoints: {
+    992: {
+      slidesPerView: 6
+    }
+  }
 });
 const teamTop = new Swiper('.team__top', {
   spaceBetween: 50,
@@ -149,6 +161,7 @@ const teamTop = new Swiper('.team__top', {
   thumbs: {
     swiper: teamThumbs
   }
+  
 });
 
 

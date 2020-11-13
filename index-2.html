@@ -81,7 +81,7 @@
 
     <div class="section about-slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide about-slide">
           <div class="section-info about">
 
             <div class="container">
@@ -144,7 +144,7 @@
             </button>
           </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide about-slide">
           <div class="section-info benefits">
 
             <div class="container">
@@ -201,7 +201,7 @@
             </button>
           </div>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide about-slide">
           <section class="section-info team">
 
             <div class="container">
@@ -343,7 +343,7 @@
             </button>
           </section>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide about-slide">
           <section class="section-info feedback">
 
             <div class="container">
@@ -356,7 +356,11 @@
                 <p>Бесплатно проводим первый тренинг-презентацию.
                   Оставляйте заявку тут и наш менеджер свяжется с вами в ближайшее время
                 </p>
-                <button class="btn btn_small feedback__btn" type="button">Оставить заявку</button>
+                <button class="btn btn_small feedback__btn" 
+                data-path="modal" 
+                data-animation="fadeInUp" 
+                data-speed="500"
+                type="button">Оставить заявку</button>
               </div>
 
             </div>
@@ -372,7 +376,29 @@
 
   </div>
 
+  <div class="modal">
+    <div class="modal__container" data-target="modal">
+      <div class="modal-content">
+        <div class="modal__img"></div>
+        <form action="#" class="modal__form">
+          <h2 class="modal__title">Оставить заявку</h2>
+          <input type="text" name="Имя" id="input-name" class="input modal__input" placeholder="Введите Ваше имя">
+          <input type="tel" name="Телефон" id="input-tel" class="input modal__input"
+            placeholder="Введите номер телефона">
+          <input type="text" name="Название компании" id="input-company" class="input modal__input"
+            placeholder="Введите название компании">
+          <button class="btn btn_small modal__btn" class="submit">Заказать обратный звонок</button>
+          <small>
+            Отправляя заявку, вы даете согласие
+            на обработку своих персональных данных
+          </small>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="js/swiper.min.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/main.js"></script>
 </body>
 
