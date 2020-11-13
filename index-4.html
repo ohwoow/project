@@ -93,7 +93,8 @@
           <li class="marker marker_big">Возможность зарядиться эмоциями и отвлечься от рутины</li>
         </ul>
 
-        <button class="btn btn_small sign-up__btn" type="button">Оставить заявку</button>
+        <button class="btn btn_small sign-up__btn" data-path="modal" data-animation="fadeInUp" data-speed="500" type="
+          button">Оставить заявку</button>
       </div>
 
       <div class="overlay"></div>
@@ -101,7 +102,29 @@
 
   </div>
 
+  <div class="modal">
+    <div class="modal__container" data-target="modal">
+      <div class="modal-content">
+        <div class="modal__img"></div>
+        <form action="#" class="modal__form">
+          <h2 class="modal__title">Оставить заявку</h2>
+          <input type="text" name="Имя" id="input-name" class="input modal__input" placeholder="Введите Ваше имя">
+          <input type="tel" name="Телефон" id="input-tel" class="input modal__input"
+            placeholder="Введите номер телефона">
+          <input type="text" name="Название компании" id="input-company" class="input modal__input"
+            placeholder="Введите название компании">
+          <button class="btn btn_small modal__btn" class="submit">Заказать обратный звонок</button>
+          <small>
+            Отправляя заявку, вы даете согласие
+            на обработку своих персональных данных
+          </small>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="js/swiper.min.js"></script>
+  <script src="js/modal.js"></script>
   <script src="js/main.js"></script>
 </body>
 
